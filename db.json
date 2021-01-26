@@ -1,0 +1,131 @@
+{
+  "employees": [
+    {
+      "id": "12",
+      "firstname": "Леонид",
+      "lastname": "Тарасов",
+      "position": "Программист",
+      "department": "IT",
+      "gender": "Мужчина",
+      "date": "1992.08.03"
+    },
+    {
+      "id": "14",
+      "firstname": "Ирина",
+      "lastname": "Панкова",
+      "position": "Бухгалтер",
+      "department": "Бухгалтерия",
+      "gender": "Женщина",
+      "date": "1994.04.04"
+    },
+    {
+      "id": "15",
+      "firstname": "Григорий",
+      "lastname": "Шейкин",
+      "position": "Менеджер",
+      "department": "Маркетинг",
+      "gender": "Мужчина",
+      "date": "1990.01.05"
+    },
+    {
+      "id": "1",
+      "firstname": "Василий",
+      "lastname": "Васильев",
+      "position": "Администратор",
+      "department": "IT",
+      "gender": "Мужчина",
+      "date": "1991.02.02"
+    },
+    {
+      "id": "2",
+      "firstname": "Алексей",
+      "lastname": "Алексеев",
+      "position": "Маркетолог",
+      "department": "Маркетинг",
+      "gender": "Мужчина",
+      "date": "1996.06.09"
+    },
+    {
+      "id": "3",
+      "firstname": "Антон",
+      "lastname": "Чернов",
+      "position": "Администратор",
+      "department": "IT",
+      "gender": "Мужчина",
+      "date": "1994.02.02"
+    },
+    {
+      "id": "4",
+      "firstname": "Марина",
+      "lastname": "Александорова",
+      "position": "Программист",
+      "department": "IT",
+      "gender": "Женщина",
+      "date": "1990.03.04"
+    },
+    {
+      "id": "5",
+      "firstname": "Егор",
+      "lastname": "Петров",
+      "position": "Менеджер",
+      "department": "Маркетинг",
+      "gender": "Мужчина",
+      "date": "1985.05.05"
+    },
+    {
+      "id": "6",
+      "firstname": "Сергей",
+      "lastname": "Павлов",
+      "position": "Бухгалтер",
+      "department": "Бухгалтерия",
+      "gender": "Мужчина",
+      "date": "1994.08.02"
+    },
+    {
+      "id": "7",
+      "firstname": "Наталья",
+      "lastname": "Жукова",
+      "position": "Маркетолог",
+      "department": "Маркетинг",
+      "gender": "Женщина",
+      "date": "1993.09.09"
+    },
+    {
+      "id": "8",
+      "firstname": "Анатолий",
+      "lastname": "Исаев",
+      "position": "Разработчик",
+      "department": "IT",
+      "gender": "Мужчина",
+      "date": "1992.08.02"
+    },
+    {
+      "id": "9",
+      "firstname": "Галина",
+      "lastname": "Попова",
+      "position": "Разработчик",
+      "department": "IT",
+      "gender": "Женщина",
+      "date": "1997.10.04"
+    },
+    {
+      "id": "10",
+      "firstname": "София",
+      "lastname": "Денисова",
+      "position": "Менеджер",
+      "department": "Маркетинг",
+      "gender": "Женщина",
+      "date": "1996.07.05"
+    },
+    {
+      "id": "11",
+      "firstname": "Николай",
+      "lastname": "Семенов",
+      "position": "Администратор",
+      "department": "IT",
+      "gender": "Мужчина",
+      "date": "1989.08.06"
+    }
+  ]
+
+}
