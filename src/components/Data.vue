@@ -154,6 +154,7 @@ export default {
     },
     updateData() {
       this.updateDataEmployee(this.id, this.user)
+      this.$router.push('/all')
     }
     
   },
