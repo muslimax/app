@@ -10,14 +10,14 @@
           aria-label="First name"
           class="form-control"
           :disabled="!inputDisabled"
-          :value="user.firstname"
+          v-model="user.firstname"
         />
         <input
           type="text"
           aria-label="Last name"
           class="form-control"
           :disabled="!inputDisabled"
-          :value="user.lastname"
+          v-model="user.lastname"
         />
       </div>
       <div class="input-group mb-3 mt-3">
@@ -42,8 +42,7 @@
           type="text"
           class="form-control"
           aria-label="Text input with dropdown button"
-          
-          :value="user.department"
+          v-model="user.department"
         />
       </div>
       <div class="input-group mb-3">
@@ -58,7 +57,7 @@
           aria-label="Sizing example input"
           aria-describedby="inputGroup-sizing-default"
           :disabled="!inputDisabled"
-          :value="user.position"
+          v-model="user.position"
         />
       </div>
       <div class="custom-control custom-radio custom-control-inline mb-3">
@@ -67,7 +66,7 @@
           id="customRadioInline1"
           name="customRadioInline1"
           class="custom-control-input"
-          :checked="maleChecked"
+          v-model="user.gender"
           :disabled="!inputDisabled"
         />
         <label class="custom-control-label" for="customRadioInline1"
@@ -80,7 +79,7 @@
           id="customRadioInline2"
           name="customRadioInline1"
           class="custom-control-input"
-          :checked="femaleChecked"
+          v-model="user.gender"
           :disabled="!inputDisabled"
         />
         <label class="custom-control-label" for="customRadioInline2"
@@ -99,7 +98,7 @@
           aria-label="Sizing example input"
           aria-describedby="inputGroup-sizing-default"
           :disabled="!inputDisabled"
-          :value="user.date"
+          v-model="user.date"
         />
       </div>
       
@@ -153,8 +152,8 @@ export default {
       this.inputDisabled = true
     },
     updateData() {
-      this.updateDataEmployee(this.id, this.user)
-      this.$router.push('/all')
+      this.updateDataEmployee(this.user)
+      // this.$router.push('/all')
     }
     
   },

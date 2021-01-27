@@ -48,8 +48,8 @@ export const store = new Vuex.Store({
       .catch((err) => {console.log(err)})
       
     },
-    updateDataEmployee({}, id, data) {
-      axios.patch(`http://localhost:3000/employees/${id}`, data)
+    updateDataEmployee({}, payload) {
+      axios.patch(`http://localhost:3000/employees/${payload.id}`, payload)
       .then(res => {console.log(res);})
       .catch(error => {
         console.log(error);
@@ -65,3 +65,5 @@ export const store = new Vuex.Store({
     }
   }
 });
+
+

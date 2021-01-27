@@ -65,19 +65,19 @@ export default {
     return {
       employeesPage: 4,
       pageNumber: 1,
+      worker: this.$store.state.employees
     };
   },
-
   computed: {
     ...mapGetters(["employees"]),
     pages() {
-      return Math.ceil(this.employees.length / 4);
+      return Math.ceil(this.worker.length / 4);
     },
 
     pagination() {
       let from = (this.pageNumber - 1) * this.employeesPage;
       let to = from + this.employeesPage;
-      return this.employees.slice(from, to);
+      return this.worker.slice(from, to);
     },
   },
 
@@ -86,9 +86,14 @@ export default {
       this.pageNumber = page;
     },
     filterGender(e) {
-      this.employees.filter((element) => {
-        return element.gender == e.target.value;
-      });
+      // this.worker = this.employees
+      if(e.target.value == "Все") {
+        this.worker = this.employees
+      }else{
+        this.worker = this.employees.filter((element) => {
+          return element.gender == e.target.value;
+        });
+      }
     },
     ...mapActions(["getEmployees"]),
   },
